@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -13,62 +11,48 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | Project tracking intro component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style> -->
   </head>
   <body>
     <header>
       <div><img src="./images/logo.svg" alt="logo" /></div>
       <nav>
-        <ul>
-          <li><a href="#product">Product</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="login">Login</a></li>
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#product">Product</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#features">Features</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link login" href="login">Login</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <div>
-        <div>
-          <img
-            src="./images/illustration-devices.svg"
-            alt="devices illustration-devices"
-          />
-        </div>
-
-        <section>
-          <div>
-            <strong>New</strong>
-            <span>Monograph Dashboard</span>
-          </div>
-          <h1>Powerful insights into your team</h1>
-          <p>Project planning and time tracking for agile teams</p>
-          <div>
-            <button>Schedule a demo</button>
-            <button>to see a live preview</button>
-          </div>
-        </section>
+        <img
+          src="./images/illustration-devices.svg"
+          alt="devices illustration-devices"
+        />
       </div>
-    </main>
 
-    <!-- <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Joseph Kabemba</a>.
-      </p>
-    </footer> -->
+      <section>
+        <div>
+          <strong>New</strong>
+          <span>Monograph Dashboard</span>
+        </div>
+        <h1>Powerful insights into your team</h1>
+        <p>Project planning and time tracking for agile teams</p>
+        <div>
+          <button>Schedule a demo</button>
+          <button>to see a live preview</button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
