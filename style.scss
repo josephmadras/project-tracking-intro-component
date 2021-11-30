@@ -7,6 +7,7 @@
 body {
   padding: 4rem 7rem;
 }
+
 header {
   width: 100%;
   display: flex;
@@ -29,6 +30,71 @@ header {
 
     .login {
       color: hsl(231, 7%, 65%);
+    }
+  }
+
+  .hamburger-container {
+    width: 40px;
+    height: 40px;
+    // border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+  }
+
+  .hamburger-container:hover {
+    cursor: pointer;
+  }
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    width: 40px;
+    height: 3px;
+    background-color: hsl(230, 29%, 20%);;
+    transition: all  0.5s ease-in-out;  
+
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+  }
+
+  .hamburger::before {
+    transform: translateY(10px);
+  }
+  .hamburger::after {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+
+      .nav-list__item {
+        width: 100px;
+      }
+
+      .nav-list__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: hsl(230, 29%, 20%);
+        font-weight: 600;
+      }
+
+      .login {
+        color: hsl(231, 7%, 65%);
+      }
     }
   }
 }
