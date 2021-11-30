@@ -56,12 +56,18 @@ header .hamburger-container {
   position: relative;
 }
 
+header .hamburger-container:hover {
+  cursor: pointer;
+}
+
 header .hamburger,
 header .hamburger::before,
 header .hamburger::after {
   width: 40px;
   height: 3px;
-  background-color: #333;
+  background-color: #242942;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header .hamburger::before,
@@ -78,6 +84,37 @@ header .hamburger::before {
 header .hamburger::after {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .illustration-container {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+main section {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+main button {
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+main button:first-child {
+  background-color: #ff5c5c;
+  color: #fff;
+  border-radius: 3px;
 }
 
 @media screen and (max-width: 767px) {

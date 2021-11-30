@@ -41,7 +41,6 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    
   }
 
   .hamburger-container:hover {
@@ -52,9 +51,8 @@ header {
   .hamburger::after {
     width: 40px;
     height: 3px;
-    background-color: hsl(230, 29%, 20%);;
-    transition: all  0.5s ease-in-out;  
-
+    background-color: hsl(230, 29%, 20%);
+    transition: all 0.5s ease-in-out;
   }
 
   .hamburger::before,
@@ -68,6 +66,28 @@ header {
   }
   .hamburger::after {
     transform: translateY(-10px);
+  }
+}
+
+main {
+  display: flex;
+  .illustration-container {
+    order: 2;
+  }
+  section {
+    order: 1;
+  }
+
+  button {
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    background-color: #fff;
+  }
+  button:first-child {
+    background-color: hsl(0, 100%, 68%);
+    color: #fff;
+    border-radius: 3px;
   }
 }
 
