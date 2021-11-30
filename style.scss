@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&family=Barlow:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,8 @@
 
 body {
   padding: 4rem 7rem;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
 }
 
 header {
@@ -71,11 +75,28 @@ header {
 
 main {
   display: flex;
+  align-items: center;
+  justify-content: center;
   .illustration-container {
     order: 2;
   }
   section {
     order: 1;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    padding-top: 0.5rem;
+  }
+
+  p {
+    padding: 1rem 0 4rem 0;
+  }
+
+  span {
+    background-color: hsl(230, 29%, 20%);
   }
 
   button {
